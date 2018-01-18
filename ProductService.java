@@ -10,5 +10,6 @@ public interface ProductService {
 	
 	private int a;
 	private int c;
+	private int d;
 
 }
