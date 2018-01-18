@@ -9,5 +9,6 @@ public interface ProductService {
 			String price, Integer page, String sort) throws Exception;
 	
 	private int a;
+	private int c;
 
 }
