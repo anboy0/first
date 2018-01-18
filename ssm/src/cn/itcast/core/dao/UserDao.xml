@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：是一个SQL映射文件的唯一标识，不能重名 -->
+<mapper namespace="cn.itcast.core.dao.UserDao">
+	<!-- SQL映射 -->
+	<!-- 添加 -->
+	<insert id="addUser" parameterType="cn.itcast.core.pojo.User">
+		insert into user
+			(name,birthday)
+		values
+			(#{name},#{birthday})
+	</insert>
+	
+	
+	
+	<!--查询所有  -->
+	<select id="findAll"  resultType="cn.itcast.core.pojo.User">
+		select 
+			id,name,birthday
+		from user
+	</select>
+	
+</mapper>	
